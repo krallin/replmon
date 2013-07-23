@@ -20,8 +20,12 @@ Next, launch replmon:
     $ replmon
 
 
+Replmon is meant to integrate with tools such as monit. See `./examples`.
+
 Output
 ======
 
-`replmon` will periodically check your MySQL replication status. Each time a check succeeds, Replmon will `touch`
+Replmon will periodically check your MySQL replication status. Each time a check succeeds, Replmon will `touch`
 the `/var/replmon.status` file, so you can monitor changes to this file to know your status.
+
+The check interval is by default 10 seconds.
