@@ -15,5 +15,7 @@ setup(
             'replmon = replmon.cli:main',
             ],
         },
+    setup_requires=["nose"],
+    tests_require=["tox", "nose"],
     description=""
 )

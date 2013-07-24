@@ -39,7 +39,12 @@ def main():
     with daemon.DaemonContext(pidfile=lockfile.pidlockfile.PIDLockFile(DEFAULT_PID_FILE),
                               files_preserve=[file_handler.stream]):
         procname.setprocname("replmon")
-        mon.run()
+        # noinspection PyBroadException
+        try:
+            mon.run()
+        except Exception:
+            logger.exception("An error occurred")
+
 
 if __name__ == "__main__":
     main()
