@@ -3,9 +3,9 @@ from setuptools import setup
 
 setup(
     name="replmon",
-    version="0.0.1",
+    version="0.0.2",
     packages=["replmon"],
-    url="",
+    url="https://github.com/krallin/replmon",
     license="Apache 2.0",
     author="Thomas Orozco",
     author_email="thomas@scalr.com",
