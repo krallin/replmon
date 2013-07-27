@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="replmon",
-    version="0.0.4",
+    version="0.0.5",
     packages=["replmon"],
     url="https://github.com/krallin/replmon",
     license="Apache 2.0",
@@ -19,4 +19,14 @@ setup(
     tests_require=["tox", "nose"],
     description="A simple MySQL replication monitor",
     long_description=open("README.rst").read(),
+    classifiers=[
+        "Development Status :: 2 - Pre-Alpha",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
+        "License :: OSI Approved :: Apache Software License",
+    ]
 )
