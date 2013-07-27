@@ -2,7 +2,8 @@
 import os
 import shutil
 import tempfile
-import unittest
+import unittest2 as unittest
+
 import time
 
 from replmon import Replmon

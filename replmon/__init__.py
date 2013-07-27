@@ -49,7 +49,6 @@ class Replmon(object):
 
         return (status["Slave_IO_Running"], status["Slave_SQL_Running"]) == ("Yes", "Yes")
 
-
     def run(self):
         logger.info("Starting monitoring loop")
         try:

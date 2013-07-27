@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="replmon",
-    version="0.0.5",
+    version="0.0.6",
     packages=["replmon"],
     url="https://github.com/krallin/replmon",
     license="Apache 2.0",
@@ -16,7 +16,7 @@ setup(
             ],
         },
     setup_requires=["nose"],
-    tests_require=["tox", "nose"],
+    tests_require=["tox", "nose", "unittest2"],
     description="A simple MySQL replication monitor",
     long_description=open("README.rst").read(),
     classifiers=[
